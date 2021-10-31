@@ -280,7 +280,7 @@ void set_logging(uint8_t arg_cnt, char **args) {
 //! \param   Argument count (int) and argument-list (char*) from Cmd.h
 //--------------------------------------------------------------------------------
 void set_initial_dump(uint8_t arg_cnt, char **args) {
-  if (arg_cnt == 1) {
+  if (arg_cnt == 2) {
     if (strcmp(args[1], "on") == 0) {
       myDevice.initialDump = true;
     }
@@ -300,7 +300,7 @@ void set_initial_dump(uint8_t arg_cnt, char **args) {
 //! \param   Argument count (int) and argument-list (char*) from Cmd.h
 //--------------------------------------------------------------------------------
 void set_experimental(uint8_t arg_cnt, char **args) {
-  if (arg_cnt == 1) {
+  if (arg_cnt == 2) {
     if (strcmp(args[1], "on") == 0) {
       myDevice.experimental = true;
     }
